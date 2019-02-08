@@ -1,0 +1,119 @@
+.gallery{
+    grid-column: center-start/center-end;
+
+    //background: rgba(13, 122, 218, 0.1);
+    padding: 2rem;
+
+
+
+    &__container{
+        display: grid;
+        grid-template-columns: [center-start]  repeat(auto-fit,[col-start] minmax(50rem,1fr)[col-end])[center-end];
+        grid-column-gap: 2rem;
+        padding: 7rem;
+        padding-top: 0;
+        grid-row-gap: 4rem;
+
+    }
+
+    &__item{
+        background: #FFFFFF;
+box-shadow: 0px 10px 25px rgba(64, 87, 103, 0.2);
+border-radius: 5px;
+        
+    }
+
+    &__top{
+        padding: 1.5rem;
+        padding-bottom: 0;
+    }
+
+    &__img{
+        flex: 0 1 calc(50% - .5rem);
+      // position: relative;
+    }
+
+    &__img-container{
+
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        &::after{
+            position: absolute;
+            content: "До";
+            width: 4rem;
+            height: 2.7rem;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background: #63DF95;
+            color: #FFFFFF;
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: bold;
+            line-height: normal;
+            font-size: 14px;
+            text-align: center;
+            
+    
+
+            color: #FFFFFF;
+            
+            border-bottom-right-radius: .5rem ; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &::before{
+
+            position: absolute;
+            content: "После";
+            width: 6rem;
+            height: 2.7rem;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            background: #63DF95;
+            color: #FFFFFF;
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: bold;
+            line-height: normal;
+            font-size: 14px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+    
+
+            color: #FFFFFF;
+            
+            border-bottom-right-radius: .5rem ; 
+            
+        }
+
+
+
+    }
+    &__desc{
+        background: #405767;
+border-radius: 0px 0px 5px 5px;
+padding: 2rem;
+
+p{
+    color: white;
+}
+
+    }
+
+    button{
+        display: block;
+        margin: 0 auto;
+    }
+
+   
+}

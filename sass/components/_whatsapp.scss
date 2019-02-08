@@ -1,0 +1,46 @@
+
+.whatsapp{
+    grid-column: full-start/full-end;
+     //   background-color: olivedrab;
+
+        .left{
+            margin-left: 9%;
+        }
+
+        img{
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        &__container{
+            display: grid;
+            grid-column-gap: 1rem;
+          //  padding: 5rem;
+            grid-template-columns:[full-start]1fr [center-start]  repeat(9,[col-start] minmax(min-content,13rem)[col-end])[center-end] 1fr[full-end];
+          
+        
+        }
+        &__one{
+        
+            grid-column: center-start /col-end 3;
+        }
+        &__two{
+          //   background-color: yellow;
+            grid-column:col-end 3/col-end 6;
+        }
+        &__three{
+         //   background-color: olivedrab;
+            grid-column: col-start 7/col-end 9;
+           
+        }
+
+        &__content{
+
+            grid-column: col-end 1/col-end 8;
+
+            .full{
+                width:100% !important;
+            }
+
+        }
+}

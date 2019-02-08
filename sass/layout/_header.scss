@@ -1,0 +1,282 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+
+.header{
+
+   
+    
+
+    &__left{
+
+        grid-column: full-start / col-end 7;
+        position: relative;
+
+
+        &--container{
+            position: absolute;
+            top: 50%;
+            left: 15%;
+            transform: translateY(-50%);
+
+            span{
+                color: $blue;
+            }
+        }
+
+    }
+    &__right{
+        grid-column: col-end 7/full-end;
+
+        background: rgba(13, 122, 218, 0.1);
+        position: relative;
+    }
+
+    &__image{
+
+        width: 100%;
+        
+        position: absolute;
+        left: -30%;
+        top: 50%;
+        transform: translateY(-50%);
+        
+
+    }
+}
+.navbar{
+    
+    &__brand{
+        //  padding:3rem;
+  
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        cursor: pointer;
+        padding: 3rem 2rem;
+          
+  
+        .s{
+            margin: 0 1rem;
+            padding-left: 1rem;
+            border-left:1px solid rgba(64, 87, 103, 0.2);
+    
+        }
+          
+  
+          &--logo{
+              position: relative;
+              top: 0rem;
+              left: .5rem;
+              
+              width: 1.6rem;
+              height: 1.6rem;
+              border-radius: 50%;
+              background-color:$blue;
+            //  margin-right: 1rem;
+              
+  
+  
+              &::after{
+                  position: absolute;
+                  top: -1.3rem;
+                  left: .4rem;
+                  content: "";
+                  width: .5rem;
+                  height: .5rem;
+                  border-radius: 50%;
+                  background-color:$green;
+  
+              }
+              &::before{
+                  position: absolute;
+                  top: -1rem;
+                  left: 1.4rem;
+                  content: "";
+                  width: 1rem;
+                  height: 1rem;
+                  border-radius: 50%;
+                  background-color:$green;
+  
+              }
+  
+          }
+      }
+
+      &__right{
+
+        display: flex;
+        justify-content: flex-end;
+        padding: 2rem 0rem;
+       // background: rgba(13, 122, 218, 0.1);
+
+
+    }
+
+    &__list{
+        list-style: none;
+        align-self: center;
+        display: flex;
+
+
+        
+        &--item{
+            cursor: pointer;
+
+            
+            margin-right: 2rem;
+
+            &:last-child{
+                margin-right: 4rem;
+            }
+        }
+    }
+
+}
+/*
+
+
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   // background-color: yellowgreen;
+   padding: 3.5rem 0 0 3rem ;
+   text-align: left;
+
+   //background: linear-gradient(to left white 0%,white 60%,rgba(13, 122, 218, 0.1) 60%);
+   
+    
+
+    .s{
+        padding: 0 1.5rem;
+        border-right:1px solid rgba(64, 87, 103, 0.2);
+
+    }
+
+    &__left{
+
+        flex: 0 0 22rem;
+
+    }
+    &__right{
+
+        display: flex;
+        justify-content: space-around;
+       // background: rgba(13, 122, 218, 0.1);
+
+
+    }
+
+    &__list{
+        list-style: none;
+        align-self: center;
+        display: flex;
+
+
+        
+        &--item{
+            cursor: pointer;
+            margin-right: 2rem;
+        }
+    }
+
+    &__brand{
+        //  padding:3rem;
+  
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+          
+  
+         
+          
+  
+          &--logo{
+              position: relative;
+              top: 0rem;
+              left: .5rem;
+              
+              width: 1.6rem;
+              height: 1.6rem;
+              border-radius: 50%;
+              background-color:$blue;
+            //  margin-right: 1rem;
+              
+  
+  
+              &::after{
+                  position: absolute;
+                  top: -1.3rem;
+                  left: .4rem;
+                  content: "";
+                  width: .5rem;
+                  height: .5rem;
+                  border-radius: 50%;
+                  background-color:$green;
+  
+              }
+              &::before{
+                  position: absolute;
+                  top: -1rem;
+                  left: 1.4rem;
+                  content: "";
+                  width: 1rem;
+                  height: 1rem;
+                  border-radius: 50%;
+                  background-color:$green;
+  
+              }
+  
+          }
+      }
+}
+.header{
+    background-image: linear-gradient(to right ,white 0%,white 60%,rgba(13, 122, 218, 0.1) 60%);
+    height: 100vh;
+    position: relative;
+    
+
+
+    &__container{
+      display: flex;
+      width: 100%;
+      padding: 15rem;
+     
+     justify-content: space-between;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      
+
+        
+        
+
+    }
+
+    &__left{
+     
+
+      
+        flex: 0 0 60%;
+       
+
+        span{
+            color: $blue;
+        }
+
+    }
+    &__right{
+        flex: 1;
+
+    }
+    &__image{
+        width: 150%;
+    }
+}
+*/

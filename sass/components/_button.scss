@@ -1,0 +1,58 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.btn-primary{
+
+    cursor: pointer;
+
+    padding: 1.5rem 3rem;
+    color: #ffffff;
+    border-radius: .5rem;
+    background-color:#0D7ADA;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: normal;
+
+    border: none;
+
+}
+
+.btn-whatsapp{
+    padding: 1.5rem 3rem;
+    color: #ffffff;
+    border-radius: .5rem;
+    
+    background: #63DF95;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: normal;
+
+    border: none;
+}
+.btn-vk{
+    padding: 1.5rem 3rem;
+    color: #ffffff;
+    border-radius: .5rem;
+    background: #405767; 
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: normal;
+
+    border: none;
+}
+
+.btn-secondary{
+
+    padding: 1.5rem 7rem;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+
+     color: #0D7ADA;
+     border: none;
+     border-radius: .5rem;
+
+
+}
